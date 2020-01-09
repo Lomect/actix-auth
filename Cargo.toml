@@ -6,6 +6,7 @@ edition = "2018"
 description = "actix auth is a cookie auth macro"
 readme = "README.md"
 repository = "https://github.com/Lomect/actix-auth.git"
+license = "MIT/Apache-2.0"
 
 [lib]
 name = "actix_auth"

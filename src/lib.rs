@@ -3,10 +3,7 @@ extern crate proc_macro;
 use proc_macro::TokenStream;
 use proc_macro2::{Ident, Span};
 use quote::quote;
-use syn::{
-    parse_macro_input, AttributeArgs, Data, DataStruct, DeriveInput, Fields, FnArg, ItemFn, Meta,
-    NestedMeta, Pat,
-};
+use syn::{ parse_macro_input, FnArg, ItemFn, Pat };
 
 #[proc_macro_attribute]
 pub fn login_required(_: TokenStream, func: TokenStream) -> TokenStream {
