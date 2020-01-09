@@ -1,0 +1,21 @@
+[package]
+name = "actix-auth"
+version = "0.1.0"
+authors = ["lome <1209518758@qq.com>"]
+edition = "2018"
+description = "actix auth is a cookie auth macro"
+readme = "README.md"
+repository = "https://github.com/Lomect/actix-auth.git"
+
+[lib]
+name = "actix_auth"
+proc-macro = true
+path = "src/lib.rs"
+
+[dependencies]
+actix-web = "2.0"
+actix-identity = "0.2.0"
+
+syn = {version = "1.0", features = ["full", "derive", "extra-traits"] }
+quote = "1.0.2"
+proc-macro2 = "1.0"
