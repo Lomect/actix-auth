@@ -14,7 +14,7 @@ proc-macro = true
 path = "src/lib.rs"
 
 [dependencies]
-actix-web = "2.0"
+actix-web = { version = "3.0.2", default-features = false }
 actix-identity = "0.2.0"
 
 syn = {version = "1.0", features = ["full", "derive", "extra-traits"] }
